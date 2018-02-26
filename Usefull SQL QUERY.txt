@@ -1,0 +1,5 @@
+Selecting all 100n/50 capacitors but shows only different mpns
+	SELECT distinct MPN, value, PPT FROM BOM_data WHERE value like '%100n/50%' GROUP BY MPN
+
+
+	SELECT distinct MPN, value, PPT FROM BOM_data WHERE value like '%100n%' GROUP BY MPN
